@@ -3,8 +3,6 @@ package com.acquia.sqlcrud.service;
 import com.acquia.sqlcrud.exception.ResourceNotFoundException;
 import com.acquia.sqlcrud.model.Student;
 import com.acquia.sqlcrud.repository.StudentRepository;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,8 +11,6 @@ import java.util.Optional;
 
 @Service
 public class StudentService {
-
-    private static final Logger logger = LogManager.getLogger(StudentService.class);
 
     @Autowired
     private StudentRepository studentRepository;
